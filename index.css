@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background: #CDCDCD;
+}
+
+label {
+    float: left;
+    width: 100px;
+    line-height: 50px;
+    color: #DDD;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+    height: 50px;
+    background: #333;
+    background: rgba(47, 47, 47, 0.98);
+}
+
+header input {
+    float: right;
+    width: 60%;
+    height: 24px;
+    margin-top: 12px;
+    text-indent: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.24), 0 1px 6px rgba(0, 0, 0, 0.45) inset;
+    border: none
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    /* 电脑中没有的字体，我们需要声明 */
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?7kkyc2');
+    src: url('fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?7kkyc2') format('truetype'),
+        url('fonts/icomoon.woff?7kkyc2') format('woff'),
+        url('fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+li {
+    height: 30px;
+    line-height: 30px;
+    background: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    border-radius: 3px;
+    border-left: 5px solid #629A9C;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+
+
+a {
+    font-family: "icomoon";
+    /*此处必须保证和上面的icomoon相同*/
+    font-size: 16px;
+    text-decoration: none;
+    color: dimgrey;
+    position: absolute;
+    right: 5px;
+
+}
+
+h2 {
+
+    position: relative;
+    padding: 0;
+    /*父级定位*/
+}
+
+h2 span {
+    position: absolute;
+    right: 5px;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+
+ol li {
+    opacity: 0.5;
+}
+
+@media screen and (max-device-width: 620px) {
+    section {
+        width: 96%;
+        padding: 0 2%;
+    }
+}
+
+@media screen and (min-width: 620px) {
+    section {
+        width: 600px;
+        padding: 0 10px;
+    }
+}
